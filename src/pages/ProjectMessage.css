@@ -1,0 +1,26 @@
+.project-message {
+  min-height: 100vh;
+  padding: 2rem;
+  background: var(--color-bg);
+}
+
+.project-message h1 {
+  font-family: 'The Year of Handicrafts', serif;
+  color: var(--color-text);
+  margin: 2rem 0 1rem;
+}
+
+.project-message p {
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.back-link {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}

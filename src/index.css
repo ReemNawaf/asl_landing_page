@@ -1,12 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap');
+@font-face {
+  font-family: 'The Year of Handicrafts';
+  src: url('/the_year_of_handicrafts/the_year_of_handicrafts_bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'The Year of Handicrafts';
+  src: url('/the_year_of_handicrafts/the_year_of_handicrafts_regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
 
 :root {
-  --color-bg: #fdfbf7;
+  --color-bg: #FFFAF5;
   --color-bg-alt: #f5f0e8;
-  --color-text: #2c2419;
+  --color-text: #3d3d3d;
   --color-text-muted: #5c5347;
   --color-accent: #8b5a2b;
   --color-accent-dark: #6d4522;
+  --color-btn-primary: #ffdab9;
 
   font-family: "Source Sans 3", system-ui, sans-serif;
   line-height: 1.5;
@@ -20,16 +33,6 @@
   background-color: var(--color-bg);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg: #1a1714;
-    --color-bg-alt: #252019;
-    --color-text: #f5f0e8;
-    --color-text-muted: #a39e94;
-    --color-accent: #c9a66b;
-    --color-accent-dark: #a8854a;
-  }
-}
 
 * {
   box-sizing: border-box;

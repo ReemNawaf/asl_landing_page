@@ -4,42 +4,121 @@
   flex-direction: column;
 }
 
-/* Header */
-.header {
-  padding: 1.5rem 2rem;
-  border-bottom: 1px solid rgba(139, 90, 43, 0.2);
+/* Hero — First section (مشروع أصل) */
+.hero-asl {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg);
 }
 
-.nav {
-  max-width: 1200px;
-  margin: 0 auto;
+.hero-asl-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1.5rem 2rem;
 }
 
-.logo {
-  font-family: "Georgia", "Times New Roman", serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--color-accent);
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-.nav-links a {
+.hero-year {
+  font-size: 0.95rem;
   color: var(--color-text-muted);
-  text-decoration: none !important;
   font-weight: 500;
-  transition: color 0.2s;
 }
 
-.nav-links a:hover {
+.hero-brand {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  font-family: 'The Year of Handicrafts', serif;
+  font-weight: 500;
+}
+
+.hero-asl-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-asl-title-image-wrap {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1rem;
+  margin-bottom: 6rem;
+}
+
+.hero-asl-tree {
+  width: clamp(180px, 120vw, 240px);
+  height: auto;
+  display: block;
+}
+
+.hero-asl-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'The Year of Handicrafts', serif;
+  font-size: clamp(3rem, 10vw, 5rem);
+  font-weight: 700;
+  color: var(--color-text);
+  margin-top: 10rem;
+  z-index: 1;
+}
+
+.hero-asl-subtitle {
+  font-family: 'The Year of Handicrafts', serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #393939;
+  max-width: 420px;
+  margin: 0 0 2rem;
+  line-height: 1.7;
+}
+
+.hero-asl-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--color-text);
+  border: 2px solid transparent;
+}
+
+.btn-ghost:hover {
   color: var(--color-accent);
+}
+
+.hero-asl-actions .btn-ghost {
+  color: #393939;
+  text-decoration: underline !important;
+}
+
+.hero-asl-actions .btn-ghost:hover {
+  color: #393939;
+}
+
+.btn-asl-primary {
+  background: #FFD0A3;
+  color: var(--color-text);
+  border-color: #FFD0A3;
+}
+
+.hero-asl-actions .btn-asl-primary {
+  min-width: 280px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.btn-asl-primary:hover {
+  background: #ffc99e;
+  border-color: #ffc99e;
 }
 
 /* Buttons */
@@ -82,45 +161,6 @@
 .btn-secondary:hover {
   color: var(--color-accent);
   border-color: var(--color-accent);
-}
-
-/* Hero */
-.hero {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 4rem 2rem;
-}
-
-.hero h1 {
-  font-family: "Georgia", "Times New Roman", serif;
-  font-size: clamp(2.5rem, 5vw, 3.75rem);
-  line-height: 1.2;
-  color: var(--color-text);
-  margin: 0 0 1rem;
-  max-width: 700px;
-}
-
-.hero .highlight {
-  color: var(--color-accent);
-}
-
-.hero-subtitle {
-  font-size: 1.25rem;
-  color: var(--color-text-muted);
-  max-width: 540px;
-  margin: 0 0 2rem;
-  line-height: 1.6;
-}
-
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
 }
 
 /* Features */
