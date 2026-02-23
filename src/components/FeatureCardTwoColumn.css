@@ -1,0 +1,39 @@
+.feature-card-two {
+  background: #FFE4CA;
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: 1fr 32%;
+  min-height: 160px;
+  overflow: hidden;
+}
+
+.feature-card-two-stripe {
+  background: #FFD0A3;
+}
+
+.feature-card-two-content {
+  background: #FFE4CA;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature-card-two-title {
+  font-family: 'The Year of Handicrafts', serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #393939;
+  margin: 0 0 0.6rem;
+  text-align: right;
+}
+
+.feature-card-two-description {
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: 'The Year of Handicrafts', serif;
+  color: #4A4A4A;
+  line-height: 1.6;
+  margin: 0;
+  text-align: right;
+}

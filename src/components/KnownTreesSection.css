@@ -1,0 +1,21 @@
+.known-trees {
+  padding: 4rem 4.9rem;
+  background: var(--color-bg);
+}
+
+.asl-second-title {
+  font-family: 'The Year of Handicrafts', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-right: 20.5rem;
+  text-align: right;
+}
+
+.known-trees-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}

@@ -6,7 +6,7 @@
 
 /* Hero — First section (مشروع أصل) */
 .hero-asl {
-  min-height: 100vh;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   background: var(--color-bg);
@@ -281,13 +281,20 @@
 
 /* Footer */
 .footer {
-  padding: 2rem;
-  text-align: center;
-  border-top: 1px solid rgba(139, 90, 43, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
 }
 
-.footer p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: var(--color-text-muted);
+.footer-item {
+  font-size: 0.95rem;
+  color: #838383;
+  font-family: 'The Year of Handicrafts', serif;
+}
+
+.footer-item-accent {
+  color: #9BA846;
+  font-family: 'The Year of Handicrafts', serif;
+  text-decoration: underline;
 }

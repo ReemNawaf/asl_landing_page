@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+import KnownTreesSection from '../components/KnownTreesSection'
+import AdvantagesSection from '../components/AdvantagesSection'
 import '../App.css'
 
 function LandingPage() {
@@ -35,56 +37,14 @@ function LandingPage() {
       </section>
 
       <main>
-
-        <section id="features" className="features">
-          <h2>Everything you need</h2>
-          <div className="feature-grid">
-            <div className="feature-card">
-              <div className="feature-icon">🌳</div>
-              <h3>Visual family tree</h3>
-              <p>Build an interactive tree and see connections across generations.</p>
-            </div>
-            <div className="feature-card">
-              <div className="feature-icon">📸</div>
-              <h3>Photos & memories</h3>
-              <p>Attach photos, documents, and stories to each family member.</p>
-            </div>
-            <div className="feature-card">
-              <div className="feature-icon">🔗</div>
-              <h3>Share & collaborate</h3>
-              <p>Invite relatives to contribute and grow the tree together.</p>
-            </div>
-          </div>
-        </section>
-
-        <section id="how-it-works" className="how-it-works">
-          <h2>How it works</h2>
-          <ol className="steps">
-            <li>Create your account and add yourself</li>
-            <li>Add parents, siblings, and children</li>
-            <li>Invite family members to expand the tree</li>
-            <li>Explore, discover, and preserve your history</li>
-          </ol>
-        </section>
-
-        <section id="signup" className="cta">
-          <h2>Ready to get started?</h2>
-          <p>Join thousands of families preserving their stories.</p>
-          <form className="signup-form">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              aria-label="Email address"
-            />
-            <button type="submit" className="btn btn-primary">
-              Get started free
-            </button>
-          </form>
-        </section>
+        <KnownTreesSection />
+        <AdvantagesSection />
       </main>
 
-      <footer className="footer">
-        <p>© {new Date().getFullYear()} Family Tree. All rights reserved.</p>
+      <footer className="footer" dir="rtl">
+        <span className="footer-item">مشــــروع أصـــل</span>
+        <span className="footer-item">طُــــــور بإحســــــــان</span>
+        <a href="https://x.com/ReemNawaf" target="_blank" rel="noopener noreferrer" className="footer-item footer-item-accent">ريـــــــم المطيــــــري</a>
       </footer>
     </div>
   )

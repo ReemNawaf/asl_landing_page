@@ -1,0 +1,68 @@
+.tree-card {
+  background: var(--color-bg);
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  height: 450px;
+  flex-direction: column;
+}
+
+.tree-card-header {
+  background: #D9E2A1;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tree-card-icon {
+  width: 64px;
+  height: auto;
+  object-fit: contain;
+}
+
+.tree-card-body {
+  padding: 1.5rem;
+  background: #F1F6CB;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: right;
+  flex: 1;
+}
+
+.tree-card-title {
+  font-family: 'The Year of Handicrafts', serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #393939;
+  margin: 0 0 0.6rem;
+}
+
+.tree-card-description {
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: 'The Year of Handicrafts', serif;
+  color: #4A4A4A;
+  line-height: 1.6;
+  margin: 0 0 1.5rem;
+  flex: 1;
+}
+
+.tree-card-btn {
+  background: #D9E2A1;
+  font-family: 'The Year of Handicrafts', serif;
+  color: #6D8323;
+  border: none;
+  border-radius: 12px;
+  padding: 0.6rem 1.5rem;
+  margin-right: 10.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.tree-card-btn:hover {
+  background: #a5d89c;
+  transform: translateY(-1px);
+}
