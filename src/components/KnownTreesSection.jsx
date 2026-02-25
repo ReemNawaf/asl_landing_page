@@ -23,8 +23,9 @@ const TREES = [
 function KnownTreesSection() {
   return (
     <section className="known-trees" dir="rtl">
-      <h2 className="asl-second-title">أشجــــار معـروفــــة</h2>
-      <div className="known-trees-grid">
+      <div className="known-trees-inner">
+        <h2 className="asl-second-title">أشجــــار معـروفــــة</h2>
+        <div className="known-trees-grid">
         {TREES.map((tree) => (
           <TreeCard
             key={tree.id}
@@ -33,6 +34,7 @@ function KnownTreesSection() {
             buttonText="زيــــارة"
           />
         ))}
+        </div>
       </div>
     </section>
   )
