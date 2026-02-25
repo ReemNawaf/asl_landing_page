@@ -37,3 +37,22 @@
   margin: 0;
   text-align: right;
 }
+
+/* On smaller screens: same layout and size as the first card (content on top, stripe below) */
+@media (max-width: 768px) {
+  .feature-card-two {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    min-height: 340px;
+    height: 340px;
+    width: 100%;
+  }
+
+  .feature-card-two-content {
+    grid-row: 1;
+  }
+
+  .feature-card-two-stripe {
+    grid-row: 2;
+  }
+}

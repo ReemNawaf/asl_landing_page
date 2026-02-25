@@ -22,6 +22,13 @@
 
 .known-trees-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: 1fr;
   gap: 2rem;
+}
+
+/* Web view: all 3 cards in one row when width is enough; no 2-column in-between */
+@media (min-width: 900px) {
+  .known-trees-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
