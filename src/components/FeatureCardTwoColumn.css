@@ -35,7 +35,8 @@
   color: #4A4A4A;
   line-height: 1.6;
   margin: 0;
-  text-align: right;
+  text-align: justify;
+  text-align-last: right;
 }
 
 /* On smaller screens: same layout and size as the first card (content on top, stripe below) */

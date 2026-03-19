@@ -13,6 +13,8 @@
 .project-message p {
   color: var(--color-text-muted);
   line-height: 1.7;
+  text-align: justify;
+  text-align-last: right;
 }
 
 .back-link {
@@ -23,4 +25,50 @@
 
 .back-link:hover {
   text-decoration: underline;
+}
+
+.project-message-inline {
+  background: var(--color-bg-alt);
+  padding: 4rem 4.9rem;
+}
+
+.project-message-inline-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.project-message-inline .asl-second-title {
+  font-family: 'The Year of Handicrafts', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin: 0 0 1.25rem 0;
+  margin-inline-start: -1.5rem;
+  text-align: right;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+.project-message-inline p {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin: 0 0 1.2rem;
+  text-align: justify;
+  text-align-last: right;
+}
+
+.project-message-inline p:last-child {
+  margin-bottom: 0;
+}
+
+.project-message-quote {
+  font-family: 'The Year of Handicrafts', serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #6D8323;
+  margin: 0.5rem 0 1rem;
+  padding-inline-start: 1.5rem;
+  border-inline-start: 3px solid #6D8323;
+  font-weight: 500;
 }

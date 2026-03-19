@@ -20,6 +20,26 @@
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
 }
 
+.known-trees-description {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin: 0 0 2rem 0;
+  margin-inline-start: -1.5rem;
+  padding-inline: 2.0rem;
+  text-align: justify;
+  text-align-last: right;
+}
+
+.known-trees-description a {
+  color: #6D8323;
+  font-weight: 500;
+}
+
+.known-trees-description a:hover {
+  text-decoration: underline;
+}
+
 .known-trees-grid {
   display: grid;
   grid-template-columns: 1fr;

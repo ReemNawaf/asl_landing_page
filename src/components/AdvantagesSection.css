@@ -20,7 +20,13 @@
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
 }
 
-.advantages-grid {
+.advantages-grids-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.advantages-grid-first-set {
   display: grid;
   /* grid-template-columns: 2fr 1fr;
   grid-template-rows: minmax(140px, 0.45fr) minmax(140px, 0.45fr); */
@@ -30,13 +36,42 @@
   row-gap: 2rem;
 }
 
+/* Second set: two cards on left (wide), tall card on right (narrow) - RTL: col 2=left, col 1=right */
+.advantages-grid-second-set {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  column-gap: 2rem;
+}
+
+.advantages-grid-second-set .advantages-cards-column {
+  grid-column: 2;
+}
+
+.advantages-grid-second-set .advantages-card-tall {
+  grid-column: 1;
+  grid-row: 1 / -1;
+}
+
+.advantages-cards-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
 .advantages-card-tall {
   grid-column: 2;
   grid-row: 1 / -1;
 }
 
+
+.advantages-card-spouses .feature-card-two {
+  min-height: 240px;
+}
+
 @media (max-width: 768px) {
-  .advantages-grid {
+  .advantages-grid-first-set,
+  .advantages-grid-second-set {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
