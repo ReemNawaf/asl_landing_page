@@ -50,22 +50,24 @@ function AdvantagesSection() {
               <FeatureCardOneColumn
                 title={ADVANTAGES[0].title}
                 description={ADVANTAGES[0].description}
+                imageSrc="/1.gif"
               />
             </div>
-            <FeatureCardTwoColumn title={ADVANTAGES[1].title} description={ADVANTAGES[1].description} />
-            <FeatureCardTwoColumn title={ADVANTAGES[2].title} description={ADVANTAGES[2].description} />
+            <FeatureCardTwoColumn title={ADVANTAGES[1].title} description={ADVANTAGES[1].description} imageSrc="/2.gif" />
+            <FeatureCardTwoColumn title={ADVANTAGES[2].title} description={ADVANTAGES[2].description} imageSrc="/3.gif" />
           </div>
           <div className="advantages-grid-second-set">
             <div className="advantages-cards-column">
               <div className="advantages-card-spouses">
-                <FeatureCardTwoColumn title={ADVANTAGES[3].title} description={ADVANTAGES[3].description} />
+                <FeatureCardTwoColumn title={ADVANTAGES[3].title} description={ADVANTAGES[3].description} imageSrc="/4.gif" />
               </div>
-              <FeatureCardTwoColumn title={ADVANTAGES[4].title} description={ADVANTAGES[4].description} />
+              <FeatureCardTwoColumn title={ADVANTAGES[4].title} description={ADVANTAGES[4].description} imageSrc="/5.gif" />
             </div>
             <div className="advantages-card-tall">
               <FeatureCardOneColumn
                 title={ADVANTAGES[5].title}
                 description={ADVANTAGES[5].description}
+                imageSrc="/6.gif"
               />
             </div>
           </div>

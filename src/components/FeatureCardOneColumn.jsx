@@ -1,4 +1,4 @@
-function FeatureCardOneColumn({ title, description }) {
+function FeatureCardOneColumn({ title, description, imageSrc }) {
   return (
     <article className="feature-card-one" dir="rtl">
       <div className="feature-card-one-inner">
@@ -8,7 +8,9 @@ function FeatureCardOneColumn({ title, description }) {
         </div>
         <div className="feature-card-one-spacer" />
       </div>
-      <div className="feature-card-one-stripe" />
+      <div className="feature-card-one-stripe">
+        {imageSrc && <img src={imageSrc} alt="" className="feature-card-one-image" />}
+      </div>
     </article>
   )
 }
